@@ -10,19 +10,23 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-60 bg-white border-r shadow-lg">
-      <div className="p-6 text-2xl font-semibold text-blue-600">SkipBin</div>
-      <nav className="flex flex-col">
-        {links.map(({ href, label }) => (
-          <Link
-            key={href}
-            href={href}
-            className={`px-6 py-3 my-1 text-lg rounded-lg transition-colors hover:bg-blue-100 ${
-              path === href ? "bg-blue-500 text-white" : "text-gray-700"
-            }`}>
-            {label}
-          </Link>
-        ))}
+    <aside className="w-60 h-screen bg-indigo-600 text-white flex flex-col">
+      <div className="p-6 text-2xl font-semibold">SkipBin</div>
+      <nav className="flex-1 px-2">
+        {links.map(({ href, label }) => {
+          const isActive = path === href;
+          return (
+            <Link
+              key={href}
+              href={href}
+              className={`
+                block px-4 py-3 my-1 rounded-lg transition
+                ${isActive ? "bg-white text-indigo-600" : "text-white hover:bg-indigo-500"}
+              `}>
+              {label}
+            </Link>
+          );
+        })}
       </nav>
     </aside>
   );
