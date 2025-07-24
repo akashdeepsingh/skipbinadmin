@@ -279,11 +279,10 @@ export default function InventoryPage() {
                 value={newBin.size}
                 onValueChange={(value) => setNewBin({ ...newBin, size: value })}>
                 <option value="">Select size</option>
-                <option value="6 yard">6 yard</option>
-                <option value="8 yard">8 yard</option>
-                <option value="10 yard">10 yard</option>
-                <option value="15 yard">15 yard</option>
-                <option value="20 yard">20 yard</option>
+                <option value="3 meter cube">3 meter cube</option>
+                <option value="4 meter cube">4 meter cube</option>
+                <option value="6 meter cube">6 meter cube</option>
+                <option value="8 meter cube">8 meter cube</option>
               </Select>
             </div>
 
