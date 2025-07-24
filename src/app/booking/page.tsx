@@ -3,13 +3,13 @@
 import React, { useState, useEffect } from "react";
 import Sidebar from "@/components/Sidebar";
 import { supabase } from "@/lib/supabaseClient";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
-import { Calendar, TrendingUp, Search, Plus, Eye, MapPin, Clock, User } from "lucide-react";
+import { Calendar, Search, Eye, MapPin } from "lucide-react";
 
 interface Booking {
   id: string;
