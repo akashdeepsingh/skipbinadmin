@@ -52,7 +52,7 @@ export default function Sidebar() {
           </a>
 
           <a
-            href="/booking"
+            href="/bookings"
             className={`flex items-center gap-3 px-3 py-2 text-sm rounded-lg ${
               active === "booking" ? "font-medium bg-blue-100 text-blue-700" : "text-gray-700 hover:bg-gray-100"
             }`}>
